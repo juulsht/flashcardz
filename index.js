@@ -130,7 +130,9 @@ function getData() {
             tasks[index] = data;
         }
     }
-    localStorage.setItem("tasks", tasks);
+
+    console.log(tasks);
+    localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
 let form = document.querySelector("form");
